@@ -52,7 +52,8 @@ body {
   overflow: hidden;
 }
 
-.title, .text {
+.title,
+.text {
   margin: 0;
 }
 
@@ -78,6 +79,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  margin-bottom: -1px;
 }
 
 .container {
@@ -85,12 +87,6 @@ body {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  margin-bottom: -1px;
 }
 
 .menu__list,
@@ -143,8 +139,7 @@ body {
   fill: currentColor;
 }
 
-.link,
-.contacts {
+.link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -153,6 +148,10 @@ body {
   text-decoration: none;
   outline-style: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link {
+  color: #757575;
 }
 
 .logo {
@@ -165,6 +164,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  outline-style: none;
   color: #2196F3;
 }
 
@@ -251,7 +251,9 @@ body {
 .hero__button:hover,
 .hero__button:focus,
 .signup__button:hover,
-.signup__button:focus {
+.signup__button:focus,
+.client-form__button:hover,
+.client-form__button:focus {
   color: #2196F3;
   background-color: #FFFFFF;
 }
@@ -444,13 +446,8 @@ body {
   margin-bottom: 20px;
 }
 
-.footer .socials:hover,
-.footer .socials:focus {
-  background-color: var(--accent-color);
-}
-
 .address {
-  width: 231px;
+  min-width: 231px;
 }
 
 .socials-wrap {
@@ -475,7 +472,7 @@ body {
   margin-bottom: 9px;
 }
 
-.address__contacts {
+.address__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -484,7 +481,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__contacts--white {
+.address__link--white {
   color: #FFFFFF;
 }
 
@@ -626,7 +623,7 @@ body {
 }
 
 .client-form__title {
-  display: inline-block;
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -644,14 +641,14 @@ body {
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
-  color: var(--gray-color);
+  color: #757575;
 }
 
-.client-form .icon {
+.client-form__icon {
   position: absolute;
   left: 12px;
   top: 30px;
-  color: var(--black-color);
+  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -757,9 +754,10 @@ body {
   border-radius: 4px;
 }
 
-.signup__button {
+.signup__button,
+.client-form__button {
   padding: 10px 28px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   border-radius: 4px;
   border: none;
@@ -773,7 +771,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-form .signup__button {
+.client-form__button {
   display: block;
   margin: 30px auto;
 }
