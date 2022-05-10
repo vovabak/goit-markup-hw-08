@@ -1,0 +1,43 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2F303A;
+
+    &__logo {
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+    &__logo--white {
+        color: $white-color;
+    }    
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.socials-wrap {
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.address {
+    min-width: 231px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__link--white {
+        color: $white-color;
+    }
+}

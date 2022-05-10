@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $gray-color;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.title {
+    @extend %noMarginNoPadding;
+}
+
+.text {
+    @extend %noMarginNoPadding;
+}
+
+.list {
+    list-style: none;
+    @extend %noMarginNoPadding;
+}
