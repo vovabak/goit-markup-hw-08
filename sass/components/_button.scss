@@ -1,0 +1,15 @@
+.button {
+    padding: 0;
+    outline-style: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $accent-color;
+        background-color: $white-color;
+    }
+
+    &:focus {
+        color: $accent-color;
+        background-color: $white-color;
+    }
+}

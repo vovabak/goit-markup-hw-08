@@ -1,12 +1,23 @@
-@import "./utils/fonts";
 @import "./utils/variables";
+@import "./utils/base";
 
-@import "./components/base";
-@import "./components/common";
+@import "./components/container";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/link";
+@import "./components/contacts";
+@import "./components/socials";
 @import "./components/placeholders";
 @import "./components/header";
-@import "./components/main-sections";
+
+@import "./components/section";
+@import "./components/hero-section";
+@import "./components/advantages-section";
+@import "./components/about-us-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/portfolio-section";
+
 @import "./components/modals";
 @import "./components/forms";
 @import "./components/footer";
-@import "./components/portfolio";

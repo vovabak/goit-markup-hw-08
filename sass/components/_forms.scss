@@ -30,6 +30,7 @@
 
         @extend %client-form_text;
         color: $gray-color;
+        outline-style: none;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,6 +55,7 @@
 
         @extend %client-form_text;
         color: $gray-color;
+        outline-style: none;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,7 +164,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.03em;        
         color: rgba(255, 255, 255, 0.6);
         background-color: rgba(33, 150, 243, 0);
         border: 1px solid rgba(255, 255, 255, 0.3);

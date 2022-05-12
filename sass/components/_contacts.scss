@@ -1,0 +1,30 @@
+.contacts {
+    @extend %flex;
+    margin-left: auto;
+
+    &__link {
+        @extend %flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__link:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__link {
+        color: $gray-color;
+    }
+
+    &:hover {
+        color: $accent-color;
+    }
+
+    &:focus {
+        color: $accent-color;
+    }
+}

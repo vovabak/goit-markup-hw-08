@@ -1,0 +1,40 @@
+.advantages {
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $black-color;
+    }
+
+    &__text {
+        line-height: 1.71;
+    }
+
+    &__icon {
+        @extend %flex;
+
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+
+        background-color: #F5F4FA;
+    }
+
+    &__list {
+        @extend %flex;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}

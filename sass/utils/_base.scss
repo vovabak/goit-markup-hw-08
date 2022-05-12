@@ -32,3 +32,18 @@ body {
     list-style: none;
     @extend %noMarginNoPadding;
 }
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
