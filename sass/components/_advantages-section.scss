@@ -2,6 +2,7 @@
 
     &__title {
         margin-bottom: 10px;
+        text-align: center;
 
         font-size: 14px;
         line-height: 1.14;
@@ -18,23 +19,56 @@
         @extend %flex;
 
         justify-content: center;
-        margin-bottom: 30px;
-        width: 270px;
+        margin-bottom: 30px;        
         height: 120px;
         border-radius: 4px;
 
         background-color: #F5F4FA;
     }
 
-    &__list {
-        @extend %flex;
-    }
-
-    &__item {
-        width: 270px;
-    }
-
     &__item:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 354px;
+        }        
+
+        &__item:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+
+        &__item:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        &__title {
+            text-align: start;
+        }
+        
+        &__list {
+            flex-wrap: nowrap;
+        }
+
+        &__item {            
+            width: 270px;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &__item:nth-child(n) {
+            margin-bottom: 0;
+        }
     }
 }
