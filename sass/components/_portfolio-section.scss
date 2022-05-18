@@ -1,7 +1,17 @@
 .portfolio {
     &__list {
         @extend %flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: start;
+        // justify-content: center;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__item:nth-last-child(-n+2) {
+        margin-bottom: 0;
     }
 
     &__item:not(:last-child) {

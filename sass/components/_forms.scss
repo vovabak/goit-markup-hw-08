@@ -143,22 +143,17 @@
 }
 
 .signup {
-    margin-top: 12px;
-    margin-left: 93px;
-
+    
     &__title {
         @extend .about-us__title;
         display: block;
         margin-bottom: 20px;
     }
 
-    &__field {
-        display: flex;
-    }
-
-    &__input {
-        padding: 15px;
-        width: 358px;
+    &__input {        
+        margin-bottom: 20px;
+        padding: 15px;        
+        width: 450px;
         height: 50px;
 
         font-weight: 400;
@@ -183,7 +178,24 @@
     &__button {
         @extend %flex;
         @extend %form-button;
-        justify-content: space-between;
-        margin-left: 12px;
+        justify-content: space-between;        
+        margin: 0 auto;
+    }    
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 12px;
+        margin-left: 93px;
+    
+        &__field {
+            display: flex;
+        }
+    
+        &__input {
+            width: 358px;
+        }
+
+        &__button {
+            margin-left: 12px;
+        }
     }
 }
