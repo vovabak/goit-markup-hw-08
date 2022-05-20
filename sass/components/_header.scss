@@ -20,8 +20,9 @@
 
 .menu {
     @extend %flex;
-    margin-bottom: -1px;    
-
+    justify-content: space-between;
+    margin-bottom: -1px;
+    
     &__list {
         display: none;
 
@@ -58,3 +59,115 @@
     }
 }
 
+.mobile-menu-open-button {
+
+    @extend %flex;    
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: $accent-color;
+    }
+    
+    &:focus {
+        color: $accent-color;
+    }
+    
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+}
+
+.mobile-menu-close-button {
+
+    @extend .mobile-menu-open-button;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-bottom: -2px;
+        width: 40px;
+        height: 40px;           
+
+    @media screen and (max-width:1199px) {
+        display: block;
+    }
+
+    &:hover {
+        color: $accent-color;            
+    }
+    
+    &:focus {
+        color: $accent-color;            
+    }
+}
+
+.mobileMenu {    
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    height: 100%;    
+    
+    background-color: $white-color;
+
+    &__link {
+        display: block;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+    }
+
+    &__link--current {
+        color: $accent-color;
+    }
+    
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 302px;
+    }
+
+    &__link--tel {
+        font-size: 34px;
+        color: $accent-color;        
+    }
+
+    &__link--email {
+        margin-top: 32px;
+        margin-bottom: 64px;
+
+        font-size: 24px;
+        line-height: 1.17;
+        color: $gray-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.mobileMenu.is-hidden {
+    display: none;
+}
+
+.mobileMenu-socials {
+    display: flex;
+
+    &__link {
+        font-size: 18px;
+        line-height: 1.22;
+        color: $accent-color;
+    }
+
+    &__item {
+        padding-right: 10px;
+    }
+
+    &__item:not(:first-child) {
+        padding-left: 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}

@@ -34,7 +34,35 @@
                         <use href="./images/icons.svg#smartphone"></use>
                     </svg>+38 096 111 11 11</a>
             </div>
-        </div>          
+            <button class="button mobile-menu-open-button" type="button" data-menu-open>
+                <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu_bourger"></use>
+                </svg>
+            </button>
+            <div class="mobileMenu is-hidden" data-menu>
+                <div class="mobileMenu-container">
+                    <button class="button mobile-menu-close-button" type="button" data-menu-close>
+                    <svg class="icon" width="30" height="30">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                    </button>
+                    <ul class="list mobileMenu__list">
+                        <li class="mobileMenu__item"><a href="#" class="link mobileMenu__link mobileMenu__link--current">Студия</a></li>
+                        <li class="mobileMenu__item"><a href="portfolio.html" class="link mobileMenu__link">Портфолио</a></li>
+                        <li class="mobileMenu__item"><a href="#" class="link mobileMenu__link">Контакты</a></li>                        
+                    </ul>
+                    <a class="link mobileMenu__link mobileMenu__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="link mobileMenu__link mobileMenu__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <ul class="list mobileMenu-socials">
+                        <li class="mobileMenu-socials__item"><a class="link mobileMenu-socials__link" href="https://www.instagram.com/">Instagram</a></li>
+                        <li class="mobileMenu-socials__item"><a class="link mobileMenu-socials__link" href="https://www.twitter.com">Twitter</a></li>
+                        <li class="mobileMenu-socials__item"><a class="link mobileMenu-socials__link" href="https://www.facebook.com">Facebook</a></li>
+                        <li class="mobileMenu-socials__item"><a class="link mobileMenu-socials__link" href="https://www.linkedin.com">LinkedIn</a></li>                        
+                    </ul>
+                </div>                
+            </div>
+        </div>        
     </header>
     <main>
         <!--Герой-->
@@ -393,7 +421,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="button modal__button" type="button" data-modal-close>
-                <svg class="icon" width="18px" height="18px">
+                <svg class="icon" width="18" height="18">
                     <use href="./images/icons.svg#close"></use>
                 </svg>                
             </button>
@@ -434,5 +462,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
