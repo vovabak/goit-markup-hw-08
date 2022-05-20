@@ -10,7 +10,7 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../../images/mobile-background-image.jpg");
+        url("./../images/mobile-background-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,14 +21,14 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../../images/mobile-background-image@2x.jpg");
+                url("./../images/mobile-background-image@2x.jpg");
         }
 
     @media screen and (min-width: 768px) {        
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../../images/tablet-background-image.jpg");
+            url("./../images/tablet-background-image.jpg");
 
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -36,7 +36,7 @@
                     background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../../images/tablet-background-image@2x.jpg");
+                        url("./../images/tablet-background-image@2x.jpg");
                 }
     }
    
@@ -46,7 +46,7 @@
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../../images/desktop_background-image.jpg");
+            url("./../images/desktop_background-image.jpg");
 
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -54,7 +54,7 @@
                     background-image: linear-gradient(to right,
                             rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../../images/desktop_background-image@2x.jpg");
+                        url("./../images/desktop_background-image@2x.jpg");
                 }
         }
     
