@@ -255,6 +255,7 @@ body {
 }
 
 .header {
+  min-width: 480px;
   border-bottom: 1px solid #ECECEC;
 }
 .header__logo--black {
@@ -444,15 +445,11 @@ body {
   padding: 118px 0;
   text-align: center;
   margin: auto;
+  min-width: 480px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/mobile-background-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media screen and (max-width: 767px) {
-  .hero {
-    min-width: 480px;
-  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
