@@ -8,17 +8,16 @@
             padding: 16px 0;            
             
             &__link {
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-
-                    font-size: 12px;
-                    line-height: 1;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 12px;
+                line-height: 1.16;                
                 }
             &__icon {
-                    margin-right: 8px;
+                margin-right: 8px;
                 }
             
-        }
+        }        
     
         @media screen and (min-width: 1200px) {            
             flex-direction: row;
@@ -26,14 +25,16 @@
             padding: 0;
             
             &__link:not(:last-child) {
-                    margin-right: 50px;
+                margin-right: 50px;
                 }
             &__link {
-                    padding-top: 32px;
-                    padding-bottom: 32px;
-                }
+                padding-top: 32px;
+                padding-bottom: 32px;
+                font-size: 14px;
+                line-height: 1.14;
+                }                
             &__icon {
-                    margin-right: 10px;
+                margin-right: 10px;
                 }
         }
 

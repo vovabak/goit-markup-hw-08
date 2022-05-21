@@ -52,11 +52,17 @@
     
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1px;
         border-radius: 4px;
         width: 100%;
         height: 4px;
         background-color: $accent-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__link--current::after {
+            bottom: 0;
+            }
     }
 }
 
@@ -81,8 +87,7 @@
 
 .mobile-menu-close-button {
 
-    @extend .mobile-menu-open-button;
-        margin-top: 10px;
+    @extend .mobile-menu-open-button;        
         margin-left: auto;
         margin-bottom: -2px;
         width: 40px;
@@ -102,14 +107,28 @@
 }
 
 .mobileMenu {    
-    position: absolute;
-    z-index: 20;
+    position: fixed;
     left: 0;
     top: 0;
-    min-width: 100%;
-    min-height: 100%;
     
-    background-color: $white-color;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    overflow-y: scroll;
+    background-color: $white-color;    
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+            
+        margin: 0 auto;
+        padding: 10px 15px 48px 40px;
+        width: 480px;           
+        height: 100%;    
+        background-color: $white-color;
+        }
 
     &__link {
         display: block;
@@ -127,9 +146,9 @@
         margin-bottom: 32px;
     }
 
-    &__item:last-child {
-        margin-bottom: 302px;
-    }
+    // &__item:last-child {
+    //     margin-bottom: 302px;
+    // }
 
     &__link--tel {
         font-size: 34px;
